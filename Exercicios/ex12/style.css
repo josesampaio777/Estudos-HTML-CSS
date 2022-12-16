@@ -1,0 +1,26 @@
+body{
+    background-color: lightcyan;
+    font-size: 20px;
+}
+h1{
+    color: darkblue;
+}
+
+#principal {
+    text-align: center;
+    color: rgb(34, 34, 231);
+    box-shadow: 2px 2px 3px black;
+    padding: 20px;
+}
+h2{
+    color: darkgreen;
+}
+p{
+    text-align: justify;
+    color: darkblue;
+}
+button{
+    color: lightblue;
+    background-color: black;
+    font-size: 20px;
+}

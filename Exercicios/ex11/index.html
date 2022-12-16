@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens que se adequam a tela</h1>
+    <p>Abra este site em diferentes dispositivos.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/img-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="Imagens/img-m.png" type="image/png">
+        <img src="Imagens/img-g.png" alt="Imagem Dinâmica">
+    </picture>
+
+    <h2>Reproduzindo Audios</h2>
+    <p>Vamos aprender a criar uma faixa de reprodução de audios em HTML 5</p>
+    <audio src="media/audiotest01.mp3" controls></audio>
+
+    <h2>Testando vídeos no navegador</h2>
+    <p>Este video esta hospedado no meu proprio servidor</p>
+    <video controls poster="Imagens/400.png" width="560">
+        <source src="media/mulher1.mp4" type="video/mp4">
+    </video>
+
+    <h2>Inserindo vídeos do youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

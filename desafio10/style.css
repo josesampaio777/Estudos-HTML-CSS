@@ -1,0 +1,163 @@
+@font-face {
+    font-family: idroid;
+    src: url(fontes/idroid.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: bebasnue;
+    src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+}
+
+
+body {
+    background-color: rgb(133, 226, 156);
+}
+
+header {
+    background-image: linear-gradient(to bottom, #00512F, #06986F,  #238B7F);
+    padding: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.432);
+}
+
+article > h2 {
+    font-family: idroid;
+    color: #00512F;
+    font-weight: bold;
+    font-size: 28px;}
+
+article > h3 {
+    font-family: idroid;
+    color: #00512F;
+    font-weight: bold;
+    font-size: 24px;
+    background-image: linear-gradient(to right, #04FF96, #8BE4C8, #B8EDDC);
+    padding: 2px;
+    margin: auto;
+}
+
+article > p > a {
+    color: #066e43;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.404);
+}
+
+article > p > a:hover {
+    text-decoration: underline;
+    text-shadow: 1px 3px 10px #000000;
+}
+
+img {
+    display: block;
+    position: relative;
+    margin: auto;
+  }
+
+h4 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+nav {
+    background-color: #238B7F;
+    padding: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header > h1 {
+    text-align: center;
+    font-family: bebasnue;
+    font-weight: bold;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.452);
+}
+
+header > h4 {
+    text-align: center;
+    font-family: bebasnue;
+    font-weight: normal;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.452);
+}
+
+nav > a {
+    color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav > a:hover{
+    color: #024940;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.479);
+    padding: 10px 5px;
+}
+
+article > p {
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 2.0em;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
+section {
+    background-color: white;
+    width: 800px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.459);
+}
+
+article {
+    margin: auto;
+}
+
+aside {
+    background-color: #c0dfd2;
+}
+
+aside > p,ul {
+    background-color: #c0dfd2;
+    padding: 10px;
+}
+
+aside > h4 {
+    background-color: #01a15f;
+    text-align: left;
+    padding: 7px;
+    border-radius: 5px 5px 0px 0px;
+    color: #ffff;
+
+}
+
+main {
+    background-color: #00512F;
+    background-color: 5px 5px 10px black;
+}
+
+footer {
+    background-color: #88bba6;
+}
+
+.autor {
+    background-image: linear-gradient(to bottom, #00512F, #06986F,  #238B7F);
+    margin: 0;
+    padding: 2px;
+    color: white;
+    text-align: center;
+}
+
+ul {
+    list-style-type: '\2714\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+}
