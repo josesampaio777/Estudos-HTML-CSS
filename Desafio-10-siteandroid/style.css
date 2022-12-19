@@ -10,6 +10,11 @@
     src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 
 body {
     background-color: rgb(133, 226, 156);
@@ -19,22 +24,69 @@ header {
     background-image: linear-gradient(to bottom, #00512F, #06986F,  #238B7F);
     padding: 20px;
     color: white;
+    margin: auto;
     font-family: Arial, Helvetica, sans-serif;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.432);
+}
+
+header > h1 {
+    text-align: center;
+    font-family: bebasnue;
+    font-weight: bold;
+    font-size: 34px;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.452);
+    padding: 10px;
+}
+
+header > h4 {
+    text-align: center;
+    font-family: bebasnue;
+    font-size: 20px;
+    font-weight: normal;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.582);
+    padding: 10px;
+}
+
+nav {
+    background-color: #238B7F;
+    padding: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.274);
+}
+
+nav > a {
+    color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav > a:hover{
+    color: #024940;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.514);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.493);
+    margin: auto;
+    padding: 10px;
+    background-color: #06986F;
+
 }
 
 article > h2 {
     font-family: idroid;
     color: #00512F;
     font-weight: bold;
-    font-size: 28px;}
+    font-size: 28px;
+    padding: 5px;
+}
 
 article > h3 {
     font-family: idroid;
     color: #00512F;
     font-weight: bold;
     font-size: 24px;
-    background-image: linear-gradient(to right, #04FF96, #8BE4C8, #B8EDDC);
+    background-image: linear-gradient(to right, #60f1b5, transparent);
     padding: 2px;
     margin: auto;
 }
@@ -51,6 +103,18 @@ article > p > a:hover {
     text-shadow: 1px 3px 10px #000000;
 }
 
+aside > p > a {
+    color: #066e43;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.404);
+}
+
+aside > p > a:hover {
+    text-decoration: underline;
+    text-shadow: 1px 3px 10px #000000;
+}
+
 img {
     display: block;
     position: relative;
@@ -63,66 +127,31 @@ h4 {
     font-size: 14px;
 }
 
-nav {
-    background-color: #238B7F;
-    padding: 20px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-header > h1 {
-    text-align: center;
-    font-family: bebasnue;
-    font-weight: bold;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.452);
-}
-
-header > h4 {
-    text-align: center;
-    font-family: bebasnue;
-    font-weight: normal;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.452);
-}
-
-nav > a {
-    color: #ffff;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    font-weight: bold;
-    text-decoration: none;
-    margin: 10px;
-}
-
-nav > a:hover{
-    color: #024940;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.479);
-    padding: 10px 5px;
-}
-
 article > p {
     text-align: justify;
     text-indent: 20px;
     line-height: 2.0em;
-}
-
-nav > a:hover {
-    text-decoration: underline;
+    padding: 10px;
 }
 
 section {
     background-color: white;
-    width: 800px;
+    max-width: 800px;
     margin: auto;
     padding: 20px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.459);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
+    border-radius: 0px 0px 20px 20px;
 }
 
 article {
     margin: auto;
+    max-width: 800px;
 }
 
 aside {
     background-color: #c0dfd2;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.452);
+    margin-top: 20px
 }
 
 aside > p,ul {
@@ -139,9 +168,24 @@ aside > h4 {
 
 }
 
-main {
+div.video {
     background-color: #00512F;
-    background-color: 5px 5px 10px black;
+    margin-bottom: 30px;
+    margin: 0px -20px 0px -20px;
+    padding: 20px;
+    padding-bottom: 56.25%;
+    position: relative;
+    min-width: 350px
+    width: 100%;
+
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 footer {
@@ -150,8 +194,8 @@ footer {
 
 .autor {
     background-image: linear-gradient(to bottom, #00512F, #06986F,  #238B7F);
-    margin: 0;
-    padding: 2px;
+    margin: 0px;
+    padding: 10px;
     color: white;
     text-align: center;
 }
@@ -160,4 +204,9 @@ ul {
     list-style-type: '\2714\0020\0020';
     columns: 2;
     list-style-position: inside;
+}
+
+.ending {
+    padding: 10px;
+    margin: 5px;
 }
