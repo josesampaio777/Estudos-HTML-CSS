@@ -5,9 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testando Imagens</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url(imagens/wallpaper-4.jpg);
+        }
+
+        div.quadrado {
+            display: inline-block;
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            background-color: lightcyan;
+            border-radius: 10px;
+        }
+
+        div#q1 {
+            background-color: aquamarine;
+        }
+
+        div#q2 {
+            background-image: linear-gradient(to bottom, blue, cyan);
+        }
+
+        div#q3 {
+            background-image: url(imagens/frame3.png);
+        }
+    </style>
 </head>
 <body>
-    <h1>Imagens como Papel de Parede</h1>
+    <div class="quadrado" id="q1"></div>
+    <div class="quadrado" id="q2"></div>
+    <div class="quadrado" id="q3"></div>
 </body>
 </html>
