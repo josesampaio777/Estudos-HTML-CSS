@@ -6,12 +6,13 @@
 * {
     margin: 0;
     padding: 0;
+    font-size: 1em;
 }
 
 header > h1 {
     font-family: 'Passion One', cursive;
     color: white;
-    font-size: 10vw;
+    font-size: 8vw;
     text-align: center;
     font-variant: small-caps;
     padding-top: 50px;
@@ -23,7 +24,7 @@ header > h2 {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 3vw;
+    font-size: 2vw;
     padding-bottom: 50px;
 }
 
@@ -32,7 +33,7 @@ header > h2 > a {
     text-align: center;
     text-decoration: none;
     color: white;
-    font-size: 3vw;
+    font-size: 2vw;
     font-weight: bold;
 }
 
@@ -54,38 +55,28 @@ article > p {
 }
 
 article {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    padding-left: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 30px;
 }
 
-#primeira {
+.img {
     background-image: url(imagens/background001.jpg);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: cover;
     background-attachment: fixed;
-    height: 600px;
-    padding-top: 50px;
+    height: 50vh;
+    padding-top: 7vh;
 
 }
 
 .paragrafodaimagem {
     color: white;
-    background-color: rgba(0, 0, 0, 0.384);
+    background-color: rgba(0, 0, 0, 0.452);
     border-radius: 10px;
-    margin-top: 50px;
-    display: inline-block;
     padding: 5px;
-}
-
-#segunda {
-    background-image: url(imagens/background002.jpg);
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 50vh;
+    display: inline-block;
 }
 
 footer {
