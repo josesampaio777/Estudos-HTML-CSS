@@ -30,6 +30,10 @@ header > h2 > a {
     font-weight: bold;
 }
 
+header > h2 > a:hover {
+    text-decoration: underline;
+}
+
 header {
     background-color: black;
     padding: 10px;
@@ -41,7 +45,8 @@ article > p {
     font-family: 'Sriracha', cursive;
     text-align: left;
     font-size: 3vh;
-    padding: 0px 0px 150px 40px;
+    padding: 50px 0px 100px 40px;
+    line-height: 2em;
 }
 
 #primeira {
@@ -50,7 +55,13 @@ article > p {
     background-position: right center;
     background-size: cover;
     background-attachment: fixed;
+    height: 600px;
+    padding-top: 50px;
 
+}
+
+.paragrafodaimagem {
+    text-decoration: underline
 }
 
 #segunda {
@@ -67,4 +78,14 @@ footer {
     text-align: center;
     padding: 3px;
     margin: auto;
+}
+
+footer > p > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
 }
