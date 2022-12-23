@@ -23,7 +23,7 @@ header > h2 {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 2vh;
+    font-size: 3vw;
     padding-bottom: 50px;
 }
 
@@ -32,7 +32,7 @@ header > h2 > a {
     text-align: center;
     text-decoration: none;
     color: white;
-    font-size: 2vw;
+    font-size: 3vw;
     font-weight: bold;
 }
 
@@ -73,9 +73,10 @@ article {
 .paragrafodaimagem {
     color: white;
     background-color: rgba(0, 0, 0, 0.384);
-    width: 400px;
     border-radius: 10px;
     margin-top: 50px;
+    display: inline-block;
+    padding: 5px;
 }
 
 #segunda {
@@ -84,6 +85,7 @@ article {
     background-position: right center;
     background-size: cover;
     background-attachment: fixed;
+    height: 50vh;
 }
 
 footer {
