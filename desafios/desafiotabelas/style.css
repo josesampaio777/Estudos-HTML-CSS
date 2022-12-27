@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+h1 {
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-variant: small-caps;
+    color: darkblue;
+    padding: 30px;
+}
+
+body {
+    background-image: linear-gradient(rgb(0, 0, 0), darkblue, rgb(4, 115, 206));
+    width: 95vw;
+    height: 95vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main {
+    color: black;
+    max-width: 700px;
+    background-color: white;
+    margin: 30px auto auto auto;
+    padding: 20px;
+    border-radius: 20px;
+    min-width: 350px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.74);
+}
+
+caption {
+    padding: 10px;
+    background-color: rgb(4, 115, 206);
+    color: azure;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.671);
+    border: 1px solid black
+}
+
+table {
+    border-collapse: collapse;
+    color: black;
+    text-align: center;
+    margin: 10px auto 50px auto;
+    border: 1px solid black;
+    min-width: 320px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.671);
+}
+
+th {
+    background-color: rgb(0, 28, 88);
+    color: white;
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+    width: auto;
+    font-size: 1.3em;
+}
+
+td {
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+    width: auto;
+    font-size: 1.1em;
+}
+
+.num {
+    text-align: right;
+}
+
+/* Efeito zebrado, o erro que estava tendo era que no td já estava definido um background color, ao apagar a linha desta propriedade, foi possível fazer a configuração zebrada. */
+tbody tr:nth-child(odd) {
+    background-color: rgb(4, 115, 206);
+    color: white;
+}

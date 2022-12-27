@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tabelas Grandes</title>
+</head>
+
+<main>
+    <body>
+        <h1>Treinando Tabelas Grandes</h1>
+        <!-- Hierarquia de tabelas
+            table
+                thead
+                    tr(linhas), td(dados), th(dados)
+                tbody
+                    tr, td, th
+                tfoot
+                    tr, td, th -->
+
+        <table>
+            <thead>
+            <caption>Alguns Status Pokemon</caption>
+                <tr> <!-- define a linha, os itens a seguir serao os dados da linha -->
+                    <th>Numero</th> <!-- primeiro item da linha -->
+                    <th>Nome</th>
+                    <th>Tipo</th>
+                    <th>Ataque</th>
+                    <th>Defesa</th>
+                    <th>Velocidade</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Venusaur</td>
+                    <td>Planta</td>
+                    <td class="num">120</td>
+                    <td class="num">90</td>
+                    <td class="num">75</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Charizard</td>
+                    <td>Fogo</td>
+                    <td class="num">150</td>
+                    <td class="num">100</td>
+                    <td class="num">110</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Blastoise</td>
+                    <td>Água</td>
+                    <td class="num">130</td>
+                    <td class="num">80</td>
+                    <td class="num">50</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Samurott</td>
+                    <td>Água</td>
+                    <td class="num">130</td>
+                    <td class="num">140</td>
+                    <td class="num">80</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Espion</td>
+                    <td>Pisiquico</td>
+                    <td class="num">80</td>
+                    <td class="num">100</td>
+                    <td class="num">90</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Jiglypuff</td>
+                    <td>Normal</td>
+                    <td class="num">50</td>
+                    <td class="num">45</td>
+                    <td class="num">120</td>
+                </tr>
+                <!-- Criei esta parte de baixo com a abreviação: (tr>td*6)*4
+                td são os dados, em coluna, que serao adicionados ao tr, que sao 4.
+                cada uma tendo 6 colunas. -->
+                <tr>
+                    <td>7</td>
+                    <td>Empoleon</td>
+                    <td>Água</td>
+                    <td class="num">130</td>
+                    <td class="num">150</td>
+                    <td class="num">50</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Infernape</td>
+                    <td>Fogo</td>
+                    <td class="num">160</td>
+                    <td class="num">130</td>
+                    <td class="num">120</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Gengar</td>
+                    <td>Fantasma</td>
+                    <td class="num">90</td>
+                    <td class="num">150</td>
+                    <td class="num">170</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Lucario</td>
+                    <td>Metal/Lutador</td>
+                    <td class="num">160</td>
+                    <td class="num">130</td>
+                    <td class="num">150</td>
+                </tr>
+            </tbody>
+
+        </table>
+</main>
+</body>
+
+</html>
