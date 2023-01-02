@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: antiquewhite;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 2em;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.705);
+            text-decoration: underline;
+        }
+
+        iframe {
+            display: block;
+            margin: auto;
+            width: 95vw;
+            height: 400px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
+        }
+    </style>
+    <title>Treinando o uso de iFrames</title>
+</head>
+<body>
+    <h1>Testando iFrames</h1>
+    <h2>Navegue pelo iframe com os links abaixo</h2>
+    <ul>
+        <a href="paginas-extras/page2.html" target="frame">
+            <li>Jardim das Quimeras Sombrias</li>
+        </a>
+        <a href="paginas-extras/page3.html" target="frame">
+            <li>Vazio Imensurável</li>
+        </a>
+        <a href="paginas-extras/page4.html" target="frame">
+            <li>Autopersonificação da Perfeição</li>
+        </a>
+    </ul>
+    <iframe name="frame" src="paginas-extras/page2.html" frameborder="0"></iframe>
+</body>
+</html>
