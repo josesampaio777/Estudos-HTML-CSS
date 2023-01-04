@@ -56,3 +56,12 @@ img:hover {
     transform: translate(-2px, -3px);
     transition: .3s;
 }
+
+iframe#tela {
+    position: relative;
+    top: 81px;
+    left: -21px;
+
+    width: 268px;
+    height: 470px;
+}
