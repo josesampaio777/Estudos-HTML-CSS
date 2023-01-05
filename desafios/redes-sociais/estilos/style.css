@@ -24,7 +24,6 @@ body {
 main {
     position: relative;
     height: 100vh;
-    text-align: left;
 }
 
 #phone {
@@ -46,6 +45,7 @@ img {
     margin: 10px;
     opacity: 0.5;
     box-sizing: border-box;
+
 }
 
 img:hover {
