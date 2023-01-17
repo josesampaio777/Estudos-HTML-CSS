@@ -1,0 +1,30 @@
+* {
+    margin: 0px;
+    outline: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+img {
+    width: 100%;
+}
+
+a{
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+a:hover{
+    background-color: blue;
+    color: silver;
+}

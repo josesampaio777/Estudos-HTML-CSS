@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1em;
+            margin: 0;
+            padding: 0;
+            outline: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px auto 40px auto;
+            padding: 30px;
+            font-size: 1.3em;
+        }
+
+        p {
+            padding: 0px 10px 10px 30px;
+        }
+
+        body {
+            background-color: #ffff;
+        }
+
+        main {
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.4),
+                        -3px -3px 7px rgba(0, 0, 0, 0.4);
+        }
+
+        p > input {
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.349);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 0px 0px 5px 30px;
+        }
+    </style>
+    <title>Testando Formulários</title>
+</head>
+<body>
+    <main>
+        <h1>Cadastro de Clientes</h1>
+        <form action="cadastro.py" autocomplete="off" method="post">
+            <label for="iname">
+                <p>Nome<input type="text" name="name" id="iname" required maxlength="30" placeholder="Insira o nome"></input></p>
+            </label>
+            <label for="ilast">
+                <p>Sobrenome <input type="text" name="last" id="ilast" placeholder="Insira o sobrenome"></p>
+            </label>
+            <label for="imedia">
+                <p>Média<input type="number" name="media" id="imedia" placeholder="insira a média"></p>
+            </label>
+            <p><input type="submit" value="Enviar"></p>
+            <p><input type="reset" value="Limpar"></p>
+        </form>
+    </main>
+</body>
+</html>
