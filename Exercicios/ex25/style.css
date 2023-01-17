@@ -45,7 +45,13 @@ legend {
 }
 
 div {
-    padding: 7px;
+    padding: 10px;
+}
+
+input {
+    border-radius: 10px;
+    max-width: 200px;
+    background-color: rgb(245, 235, 235);
 }
 
 .but {
