@@ -17,6 +17,7 @@ header {
     max-width: 800px;
     margin: 30px auto;
     border-radius: 10px;
+    border: solid 2px black;
 }
 
 h1 {
@@ -38,6 +39,7 @@ legend {
     padding: 5px;
     color: white;
     text-align: center;
+    border: solid 2px black;
 }
 
 div {
