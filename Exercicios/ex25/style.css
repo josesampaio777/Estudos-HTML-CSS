@@ -40,6 +40,8 @@ legend {
     color: white;
     text-align: center;
     border: solid 2px black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px grey;
 }
 
 div {
