@@ -11,6 +11,7 @@
     <header>
         <h1>Teste de Formulários</h1>
     </header>
+    <!-- Colocar o label indicando o id para que haja ligação entre o elemento e o id, sempre tentar diferenciar o id do name, colocando pelo menos alguma letra diferente para facilitar a diferenciação. -->
     <form action="cadastro.py" method="get">
         <fieldset>
             <legend>Dados Pessoais</legend>
@@ -28,6 +29,24 @@
                 <label for="icontato">Contato
                     <input type="tel" name="contato" id="icontato" required placeholder="(XX) XXXXX-XXXX">
                 </label>
+            </div>
+            <div>
+                <!-- utilizando a tag select para criar uma janela de opçoes, dentro dela usa-se a tag option para adicionar as opções, no exemplo foi utilizado estados. Também é possível adicionar em um grupo usando a tag optgroup. -->
+                <label for="iest">Estado</label>
+                <select name="est" id="iest">
+                    <optgroup label="Estados">
+                        <option value="MA">Maranhão</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PI">Piauí</option>
+                        <option value="PE">Pernambuco</option>
+                    </optgroup>
+                    <optgroup label="Outros Estados">
+                        <option value="RO">Roraima</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="PA">Pará</option>
+                    </optgroup>
+                </select>
             </div>
         </fieldset>
         <fieldset>
