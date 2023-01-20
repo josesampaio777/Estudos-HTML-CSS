@@ -1,0 +1,48 @@
+/* Estilo para Impressão em folha / Impressoras / Salvar em PDF */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor1: lightcyan;
+    --cor2: lightblue;
+    --cor3: darkblue;
+
+    --fonte-padrao: arial, lucida, sans-serif;
+    --fonte-destaque: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+header {
+    background-color: var(--cor1);
+    padding: 20px;
+}
+
+header h1 {
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    margin: 30px auto;
+    color: var(--cor3);
+}
+
+h2 {
+    font-family: var(--fonte-destaque);
+    padding: 20px;
+    color: var(--cor3);
+}
+
+menu {
+    display: none;
+}
+
+article::after {
+    content: "Artigo punlicado no site wwww.josesampaioaprendendo.com.br/noticias/tecnologia";
+}
