@@ -2,7 +2,5 @@
 
 body {
     background-image: url(../imagens/cev-landscape.jpg);
-    background-repeat: no-repeat;
     background-position: left top;
-    background-size: cover;
 }
