@@ -1,0 +1,29 @@
+/* Configurações padrão - All devices and features */
+
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor1: rgb(216, 203, 19);
+    --cor2: blue;
+    --cor3: darkblue;
+
+    --fonte-padrao: arial, sans-serif;
+    --font-destaque: 'Gill Sans', 'Gill Sans MT', sans-serif;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor1);
+}
+
+
+h1 {
+    font-family: var(--font-destaque);
+    color: var(--cor1);
+}
