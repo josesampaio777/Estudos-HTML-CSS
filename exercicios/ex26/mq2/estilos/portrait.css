@@ -1,0 +1,6 @@
+/* Configuração de estilo para dispositivos na vertical - modo retrado */
+
+body {
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: left bottom;
+}
