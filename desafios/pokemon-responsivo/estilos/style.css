@@ -21,7 +21,7 @@ body {
 
 header {
     max-width: 90vw;
-    margin: auto;
+    margin: 20px auto;
     text-align: center;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
     background: rgba(9, 69, 109, 0.25);
@@ -47,9 +47,10 @@ h2 {
 }
 
 nav {
-    border-radius: 15px;
-    padding: 20px;
-    text-shadow: 2px 2px 0px #00000046;
+    width: 90vw;
+    padding: 30px;
+    margin: 30px auto;
+    text-align: center;
     background: rgba(9, 69, 109, 0.25);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -61,7 +62,6 @@ nav {
 main {
     /* From https://css.glass */
     width: 90vw;
-    height: 100vh;
     padding: 30px;
     margin: auto;
     background: rgba(9, 69, 109, 0.25);
@@ -73,6 +73,9 @@ main {
 }
 
 footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
     padding: 10px;
     margin: auto;
     text-align: center;
@@ -110,46 +113,46 @@ button {
     -webkit-user-select: none;
     touch-action: manipulation;
     will-change: transform;
-   }
-   
-   button:disabled {
-    pointer-events: none;
-   }
-   
-   button#fire:hover {
-    color: #fff;
-    background-color: #c40707;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-    transform: translateY(-2px);
-   }
+}
 
-   button#water:hover {
-    color: #fff;
-    background-color: #0851da;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-    transform: translateY(-2px);
-   }
+button:disabled {
+pointer-events: none;
+}
 
-   button#plant:hover {
-    color: #fff;
-    background-color: #04dd16;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-    transform: translateY(-2px);
-   }
+button#fire:hover {
+color: #fff;
+background-color: #c40707;
+box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+transform: translateY(-2px);
+}
 
-   button#eletric:hover {
-    color: #000;
-    background-color: #e2df08;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-    transform: translateY(-2px);
-   }
-   
-   button:active {
-    box-shadow: none;
-    transform: translateY(0);
-   }
+button#water:hover {
+color: #fff;
+background-color: #0851da;
+box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+transform: translateY(-2px);
+}
 
-   /* Buttons CSS Style od cssbutton.io */
+button#plant:hover {
+color: #fff;
+background-color: #04dd16;
+box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+transform: translateY(-2px);
+}
+
+button#eletric:hover {
+color: #000;
+background-color: #e2df08;
+box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+transform: translateY(-2px);
+}
+
+button:active {
+box-shadow: none;
+transform: translateY(0);
+}
+
+/* Buttons CSS Style od cssbutton.io FIM*/
 
 img {
     width: 200px;
@@ -159,4 +162,12 @@ div {
     display: inline-block;
     text-align: center;
     margin: auto;
+}
+
+/* Para celular o tamanho das imagens pode ser menor para caberem duas na mesma coluna */
+
+@media screen and (max-width: 768px) {
+    img {
+        width: 100px;
+    }
 }
