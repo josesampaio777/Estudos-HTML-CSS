@@ -20,13 +20,9 @@ header {
     box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.6);
 }
 
-.material-symbols-outlined:hover {
-    display: block;
-    width: 100%;
+.material-symbols-outlined {
+    display: none;
 }
-
-.material-symbols-outlined:hover:hover {
-    cursor: pointer; }
 
 h1 {
     text-align: center;
@@ -143,7 +139,6 @@ main > p {
 
     .material-symbols-outlined:hover {
         cursor: pointer;
-        width: 90%;
         box-shadow: 0px 0px 5px rgb(1, 1, 43);
     }
 
@@ -154,6 +149,7 @@ main > p {
         padding: 10px;
         text-align: center;
         margin: auto;
+        margin-bottom: 30px;
     }
     
     nav > ul {
