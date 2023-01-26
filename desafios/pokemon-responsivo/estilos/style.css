@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-/* Configurações mobile first */
-
 * {
     margin: 0px;
     padding: 0px;
@@ -164,10 +162,46 @@ div {
     margin: auto;
 }
 
+div > p {
+    text-align: center;
+    display: block;
+    margin: auto;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    width: 10em;
+}
+
+div:hover {
+    border: 1px solid rgba(0, 0, 0, 0.726);
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.596);
+}
+
 /* Para celular o tamanho das imagens pode ser menor para caberem duas na mesma coluna */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 620px) {
     img {
-        width: 100px;
+        width: 150px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    div > p {
+        text-align: center;
+        display: block;
+        margin: auto;
+        background-color: transparent;
+        border: 2px solid black;
+        border-radius: 20px;
+        padding: 20px;
+        width: 30vw;
     }
 }
