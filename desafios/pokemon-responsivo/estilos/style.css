@@ -57,8 +57,6 @@ nav {
     border: 1px solid rgba(9, 69, 109, 0.3);
 }
 
-/* Para sumir em uma tela maior */
-
 span.material-symbols-outlined {
     display: none;
 }
@@ -164,6 +162,7 @@ div {
     display: inline-block;
     text-align: center;
     margin: auto;
+    box-sizing: border-box;
 }
 
 div > p {
@@ -185,7 +184,7 @@ div:hover {
 
 /* Configurações para mobile */
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 600px) {
 
     img {
         width: 170px;
