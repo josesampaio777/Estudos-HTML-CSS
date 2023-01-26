@@ -13,10 +13,10 @@
         <h1>Site Responsivo</h1>
     </header>
     <nav>
-        <span class="material-symbols-outlined">
+        <span class="material-symbols-outlined" onclick="clickMenu()">
             menu
-            </span>
-        <ul>
+        </span>
+        <ul id="menu">
             <li><a href="#">Página Inicial</a></li>
             <li><a href="#">Bastidores</a></li>
             <li><a href="#">Mapa do Site</a></li>
@@ -32,5 +32,13 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsa fuga ipsam doloribus corporis pariatur quo iusto officia hic voluptate non molestias nostrum autem, sunt neque? Dignissimos iure accusamus quibusdam!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, amet modi, explicabo minima ut sit quasi magnam nulla placeat, sunt ea veritatis perferendis officiis ullam accusantium fuga doloribus? Accusamus, dolor.</p>
     </main>
     
+    <script>
+        function clickMenu() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'} 
+            else {menu.style.display = 'block' }
+        }
+    </script>
+
 </body>
 </html>
