@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+/* Configurações Gerais */
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(209, 203, 203);
+}
+
+header {
+    background-color: gray;
+    padding: 30px;
+    margin: auto;
+    border-radius: 20px 20px 0px 0px;
+    max-width: 900px;
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.6em;
+}
+
+nav {
+    background-color: lightgrey;
+    max-width: 900px;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 30px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+nav > ul {
+    list-style-type: none;
+    font-size: 1.4em;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+li {
+    padding: 10px;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 15px;
+    text-align: center;
+}
+
+li > a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    display: inline-block;
+}
+
+nav > ul > li:hover {
+    background-color: grey;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.418);
+    transition: 0.5s;
+}
+
+a:hover {
+    color: white;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    /* From https://css.glass */
+    background: rgba(89, 106, 222, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.7px);
+    -webkit-backdrop-filter: blur(7.7px);
+    border: 1px solid rgba(89, 106, 222, 0.3);
+}
+
+main > p {
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+
+    * {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    header {
+        background-color: gray;
+        padding: 30px;
+        margin: auto;
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+        font-variant: small-caps;
+    }
+    
+    h2 {
+        text-align: center;
+        font-size: 1.6em;
+    }
+    
+    nav {
+        background-color: lightgrey;
+        padding: 10px;
+        text-align: center;
+        margin: auto;
+    }
+    
+    nav > ul {
+        list-style-type: none;
+        font-size: 1.4em;
+        text-decoration: none;
+        padding: 5px;
+        text-align: center;
+        width: 100%;
+    }
+
+    li {
+        padding: 10px;
+        display: block;
+        border: none;
+    }
+
+    li > a {
+        text-decoration: none;
+        color: black;
+        text-align: center;
+    }
+
+    nav > ul > li:hover {
+        background-color: grey;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.418);
+        transition: 0.5s;
+    }
+
+    a:hover {
+        color: white;
+    }
+    
+    main {
+        max-width: 80vw;
+        margin: auto;
+        padding: 20px;
+        /* From https://css.glass */
+        background: rgba(89, 106, 222, 0.23);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.7px);
+        -webkit-backdrop-filter: blur(7.7px);
+        border: 1px solid rgba(89, 106, 222, 0.3);
+    }
+    
+    main > p {
+        font-size: 1.2em;
+        text-align: justify;
+        line-height: 1.4em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
