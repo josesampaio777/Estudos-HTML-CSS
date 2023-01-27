@@ -15,12 +15,13 @@ header {
     background-color: gray;
     padding: 30px;
     margin: auto;
-    border-radius: 20px 20px 0px 0px;
-    max-width: 900px;
-    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    margin-bottom: 10px;
 }
 
-.material-symbols-outlined {
+/* Resolvido bug do menu não desaparecer: tinha que colocar um id e nao apenas uma classe. */
+
+#burguer {
     display: none;
 }
 
@@ -36,20 +37,20 @@ h2 {
     font-size: 1.6em;
 }
 
-nav {
+header > nav {
     background-color: lightgrey;
     max-width: 900px;
     padding: 10px;
     text-align: center;
     margin: auto;
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 10px;
     margin-bottom: 30px;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0px 0px 10px black;
 }
 
 nav > ul {
     list-style-type: none;
-    font-size: 1.4em;
+    font-size: 1em;
     text-decoration: none;
     text-align: center;
     display: inline-block;
@@ -104,14 +105,12 @@ main > p {
 
 @media screen and (max-width: 768px) {
 
-    * {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-
     header {
         background-color: gray;
         padding: 30px;
         margin: auto;
+        border-radius: 20px;
+        margin-bottom: 10px;
     }
     
     h1 {
@@ -126,7 +125,7 @@ main > p {
         font-size: 1.6em;
     }
 
-    nav > span.material-symbols-outlined {
+    span.material-symbols-outlined {
         display: block;
         margin: auto;
         width: 50px;
@@ -142,19 +141,25 @@ main > p {
         box-shadow: 0px 0px 5px rgb(1, 1, 43);
     }
 
+    #burguer {
+        display: block;
+    }
+
     #menu {display: none;}
     
-    nav {
+    header > nav {
         background-color: lightgrey;
         padding: 10px;
         text-align: center;
         margin: auto;
         margin-bottom: 30px;
+        border-radius: 10px;
+        box-shadow: inset 0px 0px 10px black;
     }
-    
-    nav > ul {
+
+    header > nav > ul {
         list-style-type: none;
-        font-size: 1.4em;
+        font-size: 1em;
         text-decoration: none;
         padding: 5px;
         text-align: center;

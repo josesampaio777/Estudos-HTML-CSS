@@ -11,18 +11,19 @@
 <body onresize="changedSize()">
     <header>
         <h1>Site Responsivo</h1>
+        <nav>
+            <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+                menu
+            </span>
+            <ul id="menu">
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Bastidores</a></li>
+                <li><a href="#">Mapa do Site</a></li>
+                <li><a href="#">Notícias</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <span class="material-symbols-outlined" onclick="clickMenu()">
-            menu
-        </span>
-        <ul id="menu">
-            <li><a href="#">Página Inicial</a></li>
-            <li><a href="#">Bastidores</a></li>
-            <li><a href="#">Mapa do Site</a></li>
-            <li><a href="#">Notícias</a></li>
-        </ul>
-    </nav>
+    
     <main>
         <h2>Meu Site</h2>
         <p>
@@ -34,7 +35,7 @@
     
     <script>
         function changedSize() {
-            if (window.innerWidth >= 768) {
+            if (window.innerWidth > 768) {
                 menu.style.display = 'block'
             } else {menu.style.display = 'none'}
         }
